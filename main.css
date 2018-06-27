@@ -231,6 +231,9 @@ iframe {
   .separator {
     margin-bottom: 20%;
   }
+  .container {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -283,12 +286,12 @@ iframe {
   }
   
   #flight1 {
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 0;
   }
   
   #flight2 {
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 0;
   }
   
@@ -300,5 +303,8 @@ iframe {
   #enhancements {
     margin-left: 10px;
     padding: 0;
+  }
+  #email-text {
+    margin: 0;
   }
 }
