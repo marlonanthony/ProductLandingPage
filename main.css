@@ -108,6 +108,7 @@ iframe {
 .flight-text {
   font-family: Ubuntu;
   text-align: center;
+  padding: 5%;
 }
 
 .list-text {
@@ -115,42 +116,39 @@ iframe {
 }
 
 #flight-grid {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 #flight1 {
-  width: 60%;
-  height: 130%;
   background-color: #dbe;
   margin: 13% 30px 0 0;
   border: 3px solid #fff;
   border-radius: 20px;
-  padding: 10%;
+  padding: 5%;
 }
 
 #flight2 {
-  width: 60%;
-  height: 130%;
   background-color: #dbe;
   margin: 5% 0 0 30px;
   border: 3px solid #fff;
   border-radius: 20px;
-  padding: 10%;
+  padding: 5%;
 }
 
 #products {
-  display: flex;
+  display: grid;
   margin: 0 5% 5% 5%;
-  flex-direction: column;
 }
 
 #products-grid {
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 #armory {
-  width: 60%;
-  height: 130%;
   background-color: #dbe;
   margin: 13% 30px 0 0;
   border: 3px solid #fff;
@@ -159,8 +157,6 @@ iframe {
 }
 
 #enhancements {
-  width: 60%;
-  height: 130%;
   background-color: #dbe;
   margin: 5% 0 0 30px;
   border: 3px solid #fff;
@@ -246,15 +242,12 @@ iframe {
   #header-list {
     font-size: 1em;
   }
-  #flight1 {
-    padding: 0;
-  }
-  #flight2 {
-    padding: 0;
+  .separator {
+    margin-top: 50%;
   }
   #email {
     width: 50%;
-  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -265,17 +258,31 @@ iframe {
   #header-list {
     font-size: .9em;
   }
-  #armory {
-    padding: 0;
-  }
-  #enhancements {
-    padding: 0;
-  }
 }
 
 @media screen and (max-width: 550px) {
    .separator {
     margin-bottom: 40%;
+  }
+   #flight-grid {
+    grid-template-columns: 1fr;
+  }
+  #products-grid {
+    grid-template-columns: 1fr;
+  }
+  #flight1 {
+    margin: 5% 0 5% 0;
+    padding: 10%;
+  }
+  #flight2 {
+    margin: 5% 0 5% 0;
+    padding: 10%;
+  }
+  #armory {
+    margin: 5% 0 5% 0;
+  }
+  #enhancements {
+    margin: 5% 0 5% 0;
   }
 }
 
@@ -283,26 +290,6 @@ iframe {
   iframe {
     width: 275px;
     height: 250px;
-  }
-  
-  #flight1 {
-    margin-right: 5px;
-    padding: 0;
-  }
-  
-  #flight2 {
-    margin-left: 5px;
-    padding: 0;
-  }
-  
-  #armory {
-    margin-right: 10px;
-    padding: 0;
-  }
-  
-  #enhancements {
-    margin-left: 10px;
-    padding: 0;
   }
   #email-text {
     margin: 0;
